@@ -1,6 +1,5 @@
 html {
 	font-family: "Open Sans";
-	background-color: #00539F;
 }
 
 body {
@@ -8,47 +7,46 @@ body {
 }
 
 header {
-  height: 30px; 
-  font-size: 20px; 
+  font-size: 15px; 
   letter-spacing: 1px;
-  background: linear-gradient(135deg, orange, orange 50%, cyan);
+  background: linear-gradient(135deg, white, white 50%, wheat);
   text-align: right;
   padding: 10px 25px;
   margin-bottom:5px;
 }
 
 #points {
-   position: float;
-   float:left;
-   max-width: 500px;
-   min-width: 200px;
-   background-color:red;
+  position: float;
+  float:right;
+  width:400px;
+  border: 2px solid red;
+  border-radius:10px;
+  background-color:wheat;
+  padding-left:15px;  
 }
 
-#inputs { 
- margin: 5px;
- padding: 2px;
- background-color:green;
+#map {
+  overflow:hidden;
+  background-color:yellow;
+  min-height: 500px;
+  min-width: 500px;
 }
+
 
 #coords {
 overflow: auto;
 }
 
+#input{
+border: 1px solid black;
+border-radius:5px;
+}
+
 .point {
-border: 2px solid black;
-background-color: yellow;
-margin: 5px;
+border: 1px solid black;
+padding: 1px;
+margin:5px 0px;
 }
-
-
-#map {
-  overflow:hidden;
-  background-color:yellow;
-  height: 500px;
-  width: 500px;
-}
-
 
 footer {
   position: fixed;

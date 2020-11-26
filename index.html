@@ -11,11 +11,15 @@
 
   </head>
   <body>
-  	<header>Где ты был?</header>
+  	<header><ul>
+		<li>Для отображения точки на карте необходимо ввести её координаты и название, если её нужно сохранить</li>
+		<li>Нажатие по сохраненной точке покажет её на карте</li>
+		<li>Сохраненную точку можно отредактировать или удалить</li>
+		</ul></header>
 	<div id="points"> 
 
 	  <div id="inputs">
-		<input data-text="name" type="text" size="40" required>
+		<input data-text="name" type="text" size="60" required>
 		<input data-text="x" type="text" size="15" required>
 		<input data-text="y" type="text" size="15" required>
 		<button data-action="find">Найти</button>
@@ -23,9 +27,9 @@
 	  </div>
 	  <div id='coords'>
 		<div class='point' data-action="find" data-index="-1" hidden="true"> 
-			<input data-text="name" type="text" size="40" readonly="true" required>
-			<input data-text="x" type="text" size="15" readonly="true" required>
-			<input data-text="y" type="text" size="15" readonly="true" required>
+			<input data-text="name" type="text" size="60" readonly="true" required>
+			<input data-text="x" type="text" size="12" readonly="true" required>
+			<input data-text="y" type="text" size="12" readonly="true" required>
 			<input data-action="editing" type="button" value="Редактировать">
 			<input data-action="deleting" type="button" value="Удалить">
 	  	</div>		
@@ -37,7 +41,7 @@
 
 	<div id='map'></div>
 
-	<footer> Ксс оставлю на последок, после сервера</footer>
+	<footer> Для теста js</footer>
 
   <script src="scripts/main.js"></script>
   </body>
